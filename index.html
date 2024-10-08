@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="style.sheet" href="in.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Quiz</title>
+</head>
+<body>
+
+    <nav>
+    <conteiner>
+    <form>
+         <img src="R.png" height="100" width="100">
+         <h1>QUIZ NAMORADOS</h1>
+        <p>Qual a minha data de nascimento?</p>
+        <input type="radio" id="maio" name="segunda" value="segunda">
+        <label for="maio">15/05/2004</label><br>
+        <input type="radio" id="abril" name="segunda" value="terca">
+        <label for="abril">15/05/2005</label><br>
+        <input type="radio" id="abril" name="segunda" value="quarta">
+        <label for="abril">15/04/2004</label><br>
+        <input type="button" onclick="ChecarResposta()" value="ACERTEI?">
+
+
+        <p>Qual a minha bebida favorita?</p>
+        <input type="radio" id="coca" name="bebidas" value="coca">
+        <label for="coca">Coca de café</label><br>
+        <input type="radio" id="cafe" name="bebidas" value="cafe">
+        <label for="cafe">Café</label><br>
+        <input type="radio" id="suco" name="bebidas" value="suco">
+        <label for="suco">Suco de laranja</label><br>
+        <input type="button" onclick="Checar()" value="ACERTEI?">
+
+        <p>Qual a data do nosso primeiro beijo?</p>
+        <input type="radio" id="julho" name="beijo" value="julho">
+        <label for="julho">17/07/2023</label><br>
+        <input type="radio" id="quinze" name="beijo" value="quinze">
+        <label for="quinze">15/07/2023</label><br>
+        <input type="radio" id="doze" name="beijo" value="doze">
+        <label for="doze">12/07/2023</label><br>
+        <input type="button" onclick="Checara()" value="ACERTEI?">
+
+        <p>Quando começamos a namorar?</p>
+        <input type="radio" id="dezembro" name="namoro" value="dezembro">
+        <label for="dezembro">15/11/2023</label><br>
+        <input type="radio" id="dez" name="namoro" value="dez">
+        <label for="dez">15/12/2023</label><br>
+        <input type="radio" id="c" name="namoro" value="c">
+        <label for="c">12/11/2023</label><br>
+        <input type="button" onclick="Checarb()" value="ACERTEI?">
+
+    
+    </form>
+</conteiner>
+</nav>
+
+    <script>
+        function ChecarResposta (){
+      const opcaoEscolhida = document.querySelector ('input[name="segunda"]:checked')
+        if ( opcaoEscolhida == maio) {
+            alert ("Você acertou")
+        } else {
+            alert("Você errou bobinho!")
+        }
+    }
+
+        function Checar(){
+        const opcaoEscolhida2 = document.querySelector ('input[name="bebidas"]:checked')
+        if ( opcaoEscolhida2 == coca) {
+            alert ("Você acertou")
+        } else {
+            alert("Você errou bobinho!")
+        }
+    }
+      
+    function Checara (){
+        const opcaoEscolhida3 = document.querySelector ('input[name="beijo"]:checked')
+        if ( opcaoEscolhida3 == quinze) {
+            alert ("Você acertou")
+        } else {
+            alert("Você errou bobinho!")
+        }
+    }
+
+    function Checarb (){
+        const opcaoEscolhida4 = document.querySelector ('input[name="namoro"]:checked')
+        if ( opcaoEscolhida4 == c) {
+            alert ("Você acertou")
+        } else {
+            alert("Você errou bobinho!")
+        }
+    }
+
+    
+    </script>
+</body>
+</html>
